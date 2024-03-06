@@ -7,10 +7,21 @@
 
 import React from 'react';
 
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, StyleSheet, Text} from 'react-native';
 
 function App(): React.JSX.Element {
-  return <SafeAreaView />;
+  return (
+    <SafeAreaView style={styles.container}>
+      <Text>Hello React Native</Text>
+    </SafeAreaView>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'ghostwhite',
+  },
+});
 
 export default App;
